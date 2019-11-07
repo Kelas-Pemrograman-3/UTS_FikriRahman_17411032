@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="model-tabel.css">
+    <title>Tabel</title>
+</head>
+<!-- Nav Bar -->
+<nav>
+    <ul>
+        <li><a href="profil.html">Profil</a></li>
+        <li>
+            <a href="index.html">Input Data</a>
+        </li>
+        <li><a href="tabel.html">Tabel</a></li>
+        <li><a href="login.html">Keluar</a></li>
+    </ul>
+</nav>
+<!-- Selesai -->
+
+<body>
+    <div class="container">
+        <div class="header-page">
+            <h3>Tabel Mahasiswa</h3>
+        </div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>NPM</th>
+                    <th>Nama Mahasiswa</th>
+                    <th>Program Studi</th>
+                    <th>Fakultas</th>
+                    <th>E-mail</th>
+                    <th>Alamat</th>
+                    <th>No. Telpon</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>17411032</td>
+                <td>Fikri Rahman</td>
+                <td>Sistem Informasi</td>
+                <td>Ilmu Komputer</td>
+                <td>fikri.17411032@student.ubl.ac.id</td>
+                <td>Sukabumi</td>
+                <td>0895392437555</td>
+            </tr>
+            <tr>
+                <td>17411014</td>
+                <td>Charles Evan Djabumir</td>
+                <td>Sistem Informasi</td>
+                <td>Ilmu Komputer</td>
+                <td>charles.17411014@student.ubl.ac.id</td>
+                <td>Bumi Asri</td>
+                <td>089631054159</td>
+            </tr>
+            <tr>
+                <td>17411023</td>
+                <td>Felix Gedeon</td>
+                <td>Sistem Informasi</td>
+                <td>Ilmu Komputer</td>
+                <td>felix.17411023@student.ubl.ac.id</td>
+                <td>Kedamaian</td>
+                <td>08952649800</td>
+            </tr>
+            <tr>
+                <td>17411012</td>
+                <td>Andreas Jodhi</td>
+                <td>Sistem Informasi</td>
+                <td>Ilmu Komputer</td>
+                <td>andreas.17411012@student.ubl.ac.id</td>
+                <td>Perwate</td>
+                <td>089620039001</td>
+            </tr>
+            <tr>
+                <td>17411035</td>
+                <td>Kevin Hartanto</td>
+                <td>Sistem Informasi</td>
+                <td>Ilmu Komputer</td>
+                <td>kevin.17411035@student.ubl.ac.id</td>
+                <td>Sukabumi</td>
+                <td>089720930155</td>
+            </tr>
+        </table>
+        <div class="tombol-folder">
+            <a href="#">
+                <button class="button-add">Add</button>
+            </a>
+            <a href="#">
+                <button class="button-utama">Edit</button>
+            </a>
+            <a href="#">
+                <button onclick="return hapus()" class="button-danger">Delete</button>
+            </a>
+        </div>
+    </div>
+</body>
+<script>
+    // console.log(''); 
+    // confirm('');?
+    // prompt('Masukan Nama Anda')
+    // Alert
+    function hapus() {
+        let konfirmasi = confirm('Apakah anda yakin ?')
+        if (konfirmasi) {
+            alert('Data Telah Dihapus.')
+        } else {
+            alert('Proses Telah Dibatalkan.')
+        }
+
+    }
+</script>
+
+</html>
